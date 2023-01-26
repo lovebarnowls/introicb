@@ -1,4 +1,4 @@
-Find the UID of Vector
+What is the userid (UID number) of user Chris?
 
 ANSWER: <Type answer here>
 
