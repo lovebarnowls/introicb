@@ -11,7 +11,7 @@ timeLimit = 150
 enabled = yes
 tag  = Forensics
 pointValue = 10
-parameters = forensic1.txt:302c63ccc99ccf5631abdabdbcc4d372 forensic2.txt:1005 forensic3.txt:phil forensic4.txt:goodluckbreakingthiscode
+parameters = forensic1.txt:welcometocybertaipantraining forensic2.txt:1004 
 description = Ex: forensic9.txt:green (Check forensic9.txt for ANSWER: green)
 msg = Forensic question %PARAMETER% is correct
 
@@ -19,7 +19,7 @@ msg = Forensic question %PARAMETER% is correct
 enabled = yes
 tag = User Management
 pointValue = 3
-parameters = elmacho
+parameters = idontbelonghere
 description = Users that should be removed from the system 
 msg = Unwanted user %PARAMETER% has been removed: 
 
@@ -27,7 +27,7 @@ msg = Unwanted user %PARAMETER% has been removed:
 enabled = yes
 tag = User Management
 pointValue = 1
-parameters = norbert mike dave
+parameters = yang
 description = Users that need to be added to the system
 msg = New user %PARAMETER% added to system 
 
@@ -35,7 +35,7 @@ msg = New user %PARAMETER% added to system
 enabled = yes
 tag = User Management
 pointValue = -10
-parameters = kevin bob phil
+parameters = ron
 description = Users that are required on the system
 msg = Essential user %PARAMETER% has been removed!
 
@@ -43,7 +43,7 @@ msg = Essential user %PARAMETER% has been removed!
 enabled = yes
 tag = User Management
 pointValue = 2
-parameters = kevin
+parameters = chris
 description = Users that are required to be Administrators
 msg = User %PARAMETER% is now an administrator
 
@@ -51,7 +51,7 @@ msg = User %PARAMETER% is now an administrator
 enabled = yes
 tag = User Management
 pointValue = 2 
-parameters = bob
+parameters = sam
 description = Users that are prohibited from being Administrators
 msg = User %PARAMETER% is no longer an administrator
 
@@ -59,7 +59,7 @@ msg = User %PARAMETER% is no longer an administrator
 enabled = yes
 tag = User Management
 pointValue = 2
-parameters = bob:banana vector:banana
+parameters = sam:emeritusmentor
 description = Users that are required to be in a group
 msg = User %PARAMETER% is now in group
 
@@ -67,9 +67,9 @@ msg = User %PARAMETER% is now in group
 enabled = yes
 tag = Local Policy
 pointValue = 3
-parameters = /etc/group:banana
+parameters = /etc/group:emeritusmentor
 description = Text you would like added to file
-msg = Group banana has been created
+msg = Group emeritusmentor has been created
 
 [07-DisableGuestEtc:Secure_lightdm]
 enabled = no
@@ -80,7 +80,7 @@ description =
 msg = Guest account has been disabled
 
 [08-CheckUserPassword: Check_user_password]
-enabled = yes
+enabled = no
 tag = User Management
 pointValue = 2
 parameters = kevin:MinDays vector:MaxDays gru:NoPassword
@@ -88,7 +88,7 @@ description = Ex: username:check. Possible parameters MinDays, MaxDays, NoPasswo
 msg = Password issue has been fixed: %PARAMETER%
 
 [09-PasswordPolicy:Check_password_policy]
-enabled = yes
+enabled = no
 tag = Account Policy
 pointValue = 1
 parameters = MinLen:8 Retry:5 Remember:12
@@ -96,7 +96,7 @@ description = Possible parameters RejectUsername, EnforceForRoot, LockoutTally, 
 msg = Password policy %PARAMETER% secured
 
 [10-LoginDefs:Secure_login_defs]
-enabled = yes
+enabled = no
 tag = Account Policy
 pointValue = 1
 parameters = PasswordMaxDays PasswordMinDays LogUnknownFail
@@ -107,12 +107,12 @@ msg = Account policy has been made more secure by %PARAMETER%
 enabled = yes
 tag = Unwanted Software
 pointValue = 2
-parameters = john rkhunter
+parameters = sqlite3
 description = Packages that are not allowed on the system
 msg = Unwanted software %PARAMETER% removed
 
 [13-ShieldsUP:Firewall_enabled]
-enabled = yes
+enabled = no
 tag = Defensive Countermeasures
 pointValue = 2
 parameters = None
@@ -120,7 +120,7 @@ description = Make sure the firewall is enabled
 msg = Firewall protection has been enabled
 
 [14-SecureSSH:Secure_ssh]
-enabled = yes
+enabled = no
 tag = Application Security
 pointValue = 2
 parameters = defaultPortChange PermitRootLoginNo Protocol2Only UsePAMyes PermitEmptyPasswordsNo
@@ -128,7 +128,7 @@ description = Possible parameters: defaultPortChange, PermitRootLoginNo, Protoco
 msg = SSH made more secure by %PARAMETER%
 
 [15-SshApacheRequiredService:Required_services]
-enabled = yes
+enabled = no
 tag = Service Auditing
 pointValue = 3
 parameters = apache2
@@ -136,7 +136,7 @@ description = Services that must be running
 msg = Required service %PARAMETER% is running
 
 [16-BadServiceApache2:Prohibited_services]
-enabled = yes
+enabled = no
 tag = Service Auditing
 pointValue = 4
 parameters = mysql
@@ -144,7 +144,7 @@ description = Services that you want stopped
 msg = Service %PARAMETER% has been disabled
 
 [17-TurnOnUpdates:Update_settings]
-enabled = yes
+enabled = no
 tag = OS Update
 pointValue = 1
 parameters = installSecUpdates checkDaily downloadSecUpdates 
@@ -152,7 +152,7 @@ description = Possible parameters: installSecUpdates checkDaily, downloadSecUpda
 msg = Update settings have been configured: 
 
 [18-SysCtrlGoodness:Kernel_harden]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 1
 parameters = DmesgRestrict CtrlAltDel DisableSendRedirects 
@@ -160,7 +160,7 @@ description = Possible Parameters: BlockModLoading, DmesgRestrict, KexecLoadDisa
 msg = Kernel hardened via %PARAMETER%
 
 [19-ChangePermShadow:Perm_no_longer_equal]
-enabled = yes
+enabled = no
 tag = Uncategorized OS Setting
 pointValue = 4
 parameters = /etc/shadow:777
@@ -168,7 +168,7 @@ description = Ex: /etc/shadow:777 (Change permissions of /etc/shadow away from 7
 msg = File permissions on /etc/shadow have been secured
 
 [20-ChangePermSshConfig:Perm_now_equal_to]
-enabled = yes
+enabled = no
 tag = Uncategorized OS Setting
 pointValue = 3
 parameters = /var/www/html:770
@@ -179,12 +179,12 @@ msg = Directory permissions on /var/www/html have set
 enabled = yes
 tag = Prohibited File
 pointValue = 5
-parameters = /home/gru/Desktop/notavirus.dll
+parameters = /home/ivan/desktop/iloveqld/clickonthistomakeyourdreamscometrue.dll
 description = Files you want removed from the system
 msg = Plaintext unauthorized file %PARAMETER% removed
 
 [22-SshLoginBanner:File_now_contains]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 5
 parameters = /etc/ssh/sshd_config:^Banner.*
@@ -192,7 +192,7 @@ description = Text you would like added to file
 msg = Ssh server is now displaying a login banner.
 
 [23-FrankNoPasswdLogin:File_no_longer_contains]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 5
 parameters = /etc/group:^nopasswdlogin.*gru.*
@@ -200,7 +200,7 @@ description = Text you would like removed from file
 msg = User gru no longer allowed to login without password
 
 [24-DennisHasPW:File_no_longer_contains]
-enabled = yes
+enabled = no
 tag = Password Policy
 pointValue = 3
 parameters = /etc/shadow:bob::.*
@@ -208,7 +208,7 @@ description = Text you would like removed from file
 msg = User bob has a password
 
 [25-RkhunterCronJob:File_now_contains]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 4
 parameters = /var/spool/cron/crontabs/root:^0\s1\s[*]1\s[*]1\s[*]1\s.*rkhunter.*
@@ -216,7 +216,7 @@ description = Text you would like added to file
 msg = Rkhunter scan being run via cron
 
 [26-HttpFirewallRule:Firewall_rule_exists]
-enabled = yes
+enabled = no
 tag = Defensive Countermeasures
 pointValue = 3
 parameters = 80
@@ -224,7 +224,7 @@ description = Port number that should exist in firewall rules
 msg = HTTP traffic is allowed through firewall
 
 [27-CharlieRbase:File_now_contains]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 4
 parameters = /etc/passwd:*.vector.*rbash.*
@@ -232,7 +232,7 @@ description = Text you would like added to file
 msg = User vector has been set to a restricted bash shell
 
 [28-DennisNoSsh:File_now_contains]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 4
 parameters = /etc/ssh/sshd_config:^DenyUsers.*phil.*
@@ -240,7 +240,7 @@ description = Text you would like added to file
 msg = User phil has been denied ssh access.
 
 [29-EtcPasswdRoot:Owned_by_user]
-enabled = yes
+enabled = no
 tag = Local Policy
 pointValue = 4
 parameters = /etc/passwd:root
@@ -259,12 +259,9 @@ msg = Webserver root directory is owned by group banana
 enabled = yes
 tag = Prohibited File
 pointValue = 5
-parameters = /opt/listen.sh
+parameters = /home/chris/desktop/ilovevic/vicisawesome/thisisabackdoor.exe
 description = Files you want removed from the system
 msg = Netcat backdoor removed: %PARAMETER%
-
-
-
 
 """
 import configparser
