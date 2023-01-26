@@ -8,6 +8,7 @@ sudo useradd james
 sudo useradd sam
 sudo passwd -d ron
 sudo usermod -aG sudo ron
+sudo usermod -aG sudo sam
 sudo mkdir -p /home/ivan/desktop/iloveqld
 sudo echo 'you should not have opened this' > /home/ivan/desktop/iloveqld/clickonthistomakeyourdreamscometrue.dll
 sudo mkdir -p /home/james/desktop/
