@@ -1,38 +1,41 @@
-Please send all feedback regarding bugs and non-working issues to the slack channel.
-Due to severe hard disk computer failure of the person creating this image, this was not as extensively tested as would have been preferred, so please forgive any errors.
+Welcome to CyberTaipan training: Introduction to the scoring service.
 
-You are the system administrator for the Anti-Villian League.  You have been tasked with examining and securing a workstation that may have been compromised by a disgruntled employee.
+Through this image, it is hoped that you will get familiar with the scoring service, and at the same time, to gain some familiarity with how the system works.
 
-The person who was assigned this workstation (vector) had access to sensitive files, and is suspected of copying those files from the company server and sharing them with unauthorized people. This may include documents, media files or photographs. This person may have also installed spyware or made other changes to compromise the security of the system.
+To begin, please open 'ScoreReport.html' on your Desktop when it loads.
+There should be two other files named 'forensic1' and 'forensic2'
 
-Authorized administrators:
+If the scoring doesn't show up, it probably means it hasn't loaded yet.
+DO NOT interact with the image (ie open the terminal etc) until the Scoring Engine is done loading. Doing so may cause your image to be rendered useless.
 
-	ubuntu
-	stuart
-	kevin
+The score report reloads every 120 seconds, so if you think you have done something correctly, you can check the scoring service (press reload on firefox) to see if you have scored (or lost) any points.
 
-Authorized users:
 
-	gru
-	phil
-	bob
-	dave
-	norbert
-	mike
+There is normally a scenario introduction, but we will leave scenarios for future instances.
+For today, try to do the following, and regularly check the scoring system for your score.
 
-This workstation is used for web browsing, e-mail and word processing only.  No multimedia files or other applications should be installed.
 
-Company password policy requires that passwords should be complex and of a sufficient length to prevent brute-force attacks.  Passwords on all accounts should be changed on a regular basis, and users should not be able to reuse their recent passwords.  Policies should be implemented to prevent attackers from repeatedly guessing passwords.
+a) Answer forensic1
+b) Answer forensic2
+c) Remove user idontbelonghere
+d) This will cause a point deduction but do it anyway to see what happens: remove user ron
+See if you can figure out how to remove the penalty after triggering it
+e) Add user yang to the system
+f) Create emeritusmentor group
+g) Add user sam to emeritusmentor group
+h) Remove user sam from sudo
+i) Add user chris to sudo group
+j) User ivan has file on his folder called clickonthistomakeyourdreamscometrue.dll. It is unauthorized so remove it.
+k) remove unauthorized software by the name sqlite3
+l) Advanced - there is another file with the name 'thisisabackdoor.exe' on the server. It could be potentially used by the netcat utility program as a backdoor. See if you can find it and remove it
 
-The only people who should be able to remotely access the computer are the administrators, and ssh is the only remote access software permitted.
-Due to organizational policies, phil, who does not have a security clearence, cannot be granted permission to ssh.
-Similarly, Vector will need to use a restricted shell.
-sql must be removed for all users.
+For our practice images, because some students will finish faster than others, we may include unscored extra questions in the readme as an extension and challenge.
 
-Bob and Vector would like to form a new group called banana.
+For this image, here are some extension questions:
+1) Create a group called 'needsmoresleep'
+2) Add user yang to the group 'needsmoresleep'
+3) Look up this file. Who is the current owner? 
+/home/chris/desktop/ilovevic/lullaby.txt
+4) Change the owner of the following file to user 'yang' and group 'needsmoresleep'
+5) How can i know if I managed to do it correctly?
 
-Security patches for the operating system and all critical software should be kept up to date.
-
-Auditing should be enable to allow the security team to determine who tries to log into the system.
-
-Critical services: SSH APACHE
