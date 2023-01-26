@@ -1,6 +1,5 @@
-Gru uses an MD5 hash of a keyword as his password.
-Unfortunately, he has forgotten his keyword, but his back up password notebook shows the string 'ZHJuZWZhcmlv', with base64 written next to it.
-Give Gru his password (MD5 hash)
+There is a text file on the desktop of user james. It is encoded in base64.
+What is the message?
 
 ANSWER: <Type answer here>
 
