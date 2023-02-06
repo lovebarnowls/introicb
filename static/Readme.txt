@@ -2,6 +2,10 @@ Welcome to CyberTaipan training: Introduction to the scoring service.
 
 Through this image, it is hoped that you will get familiar with the scoring service, and at the same time, to gain some familiarity with how the system works.
 
+Note: Users on AWS may need to run the following code if they don't have permissions to write files etc:
+sudo -i
+
+
 To begin, please open 'ScoreReport.html' on your Desktop when it loads.
 There should be two other files named 'forensic1' and 'forensic2'
 
