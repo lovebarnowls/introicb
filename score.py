@@ -19,7 +19,7 @@ msg = Forensic question %PARAMETER% is correct
 enabled = yes
 tag = User Management
 pointValue = 3
-parameters = idontbelonghere
+parameters = lionelmessi
 description = Users that should be removed from the system 
 msg = Unwanted user %PARAMETER% has been removed: 
 
@@ -35,7 +35,7 @@ msg = New user %PARAMETER% added to system
 enabled = yes
 tag = User Management
 pointValue = -10
-parameters = ivan james ron
+parameters = brothero itguy itguy2
 description = Users that are required on the system
 msg = Essential user %PARAMETER% has been removed!
 
@@ -43,7 +43,7 @@ msg = Essential user %PARAMETER% has been removed!
 enabled = yes
 tag = User Management
 pointValue = 2
-parameters = chris
+parameters = brotherz
 description = Users that are required to be Administrators
 msg = User %PARAMETER% is now an administrator
 
@@ -51,7 +51,7 @@ msg = User %PARAMETER% is now an administrator
 enabled = yes
 tag = User Management
 pointValue = 2 
-parameters = sam
+parameters = amanda
 description = Users that are prohibited from being Administrators
 msg = User %PARAMETER% is no longer an administrator
 
@@ -59,7 +59,7 @@ msg = User %PARAMETER% is no longer an administrator
 enabled = yes
 tag = User Management
 pointValue = 2
-parameters = sam:emeritusmentor
+parameters = amanda:emeritusmentor
 description = Users that are required to be in a group
 msg = User %PARAMETER% is now in group
 
