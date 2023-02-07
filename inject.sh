@@ -1,21 +1,21 @@
 #!/bin/bash
 
-sudo useradd ron
-sudo useradd idontbelonghere
-sudo useradd chris
-sudo useradd ivan
-sudo useradd james
-sudo useradd sam
-sudo passwd -d ron
-sudo usermod -aG sudo ron
-sudo usermod -aG sudo sam
-sudo mkdir -p /home/ivan/desktop/iloveqld
-sudo mkdir -p /home/chris/desktop/ilovevic/vicisawesome
-sudo echo 'you should not have opened this' > /home/ivan/desktop/iloveqld/clickonthistomakeyourdreamscometrue.dll
-sudo echo 'you should not open this either' > /home/chris/desktop/ilovevic/vicisawesome/thisisabackdoor.exe
-sudo echo 'thisisforadvancedquestion1' > /home/chris/desktop/ilovevic/lullaby.txt
-sudo chown :1006 /home/chris/desktop/ilovevic/lullaby.txt
-sudo mkdir -p /home/james/desktop/
-sudo echo 'welcometocybertaipantraining' |base64 > /home/james/desktop/welcome.txt
+sudo useradd brothero
+sudo useradd lionelmessi
+sudo useradd brotherz
+sudo useradd itguy
+sudo useradd itguy2
+sudo useradd amanda
+sudo passwd -d brothero
+sudo usermod -aG sudo brothero
+sudo usermod -aG sudo amanda
+sudo mkdir -p /home/itguy/desktop/iloveqld
+sudo mkdir -p /home/brotherz/desktop/ilovevic/vicisawesome
+sudo echo 'you should not have opened this' > /home/itguy/desktop/iloveqld/clickonthistomakeyourdreamscometrue.dll
+sudo echo 'you should not open this either' > /home/brotherz/desktop/ilovevic/vicisawesome/thisisabackdoor.exe
+sudo echo 'thisisforadvancedquestion1' > /home/brotherz/desktop/ilovevic/lullaby.txt
+sudo chown :1006 /home/brotherz/desktop/ilovevic/lullaby.txt
+sudo mkdir -p /home/itguy2/desktop/
+sudo echo 'welcometocybertaipantraining' |base64 > /home/itguy2/desktop/welcome.txt
 sudo apt install gedit john rkhunter sqlite3 mysql-server -y -qq
 
