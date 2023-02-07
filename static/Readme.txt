@@ -26,10 +26,10 @@ d) This will cause a point deduction but do it anyway to see what happens: remov
 See if you can figure out how to remove the penalty after triggering it
 e) Add user yang to the system
 f) Create emeritusmentor group
-g) Add user sam to emeritusmentor group
-h) Remove user sam from sudo
-i) Add user chris to sudo group
-j) User ivan has file on his folder called clickonthistomakeyourdreamscometrue.dll. It is unauthorized so remove it.
+g) Add user amanda to emeritusmentor group
+h) Remove user amanda from sudo
+i) Add user brotherz to sudo group
+j) User itguy has file on his folder called clickonthistomakeyourdreamscometrue.dll. It is unauthorized so remove it.
 k) remove unauthorized software by the name sqlite3
 l) Advanced - there is another file with the name 'thisisabackdoor.exe' on the server. It could be potentially used by the netcat utility program as a backdoor. See if you can find it and remove it
 
@@ -39,7 +39,7 @@ For this image, here are some extension questions:
 1) Create a group called 'needsmoresleep'
 2) Add user yang to the group 'needsmoresleep'
 3) Look up this file. Who is the current owner? 
-/home/chris/desktop/ilovevic/lullaby.txt
+/home/brotherz/desktop/ilovevic/lullaby.txt
 4) Change the owner of the following file to user 'yang' and group 'needsmoresleep'
 5) How can i know if I managed to do it correctly?
 
