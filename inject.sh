@@ -17,5 +17,3 @@ sudo echo 'thisisforadvancedquestion1' > /home/brotherz/desktop/ilovevic/lullaby
 sudo chown :1006 /home/brotherz/desktop/ilovevic/lullaby.txt
 sudo mkdir -p /home/itguy2/desktop/
 sudo echo 'welcometocybertaipantraining' |base64 > /home/itguy2/desktop/welcome.txt
-sudo apt install gedit john rkhunter sqlite3 mysql-server -y -qq
-
