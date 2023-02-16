@@ -30,8 +30,7 @@ g) Add user amanda to emeritusmentor group
 h) Remove user amanda from sudo
 i) Add user brotherz to sudo group
 j) User itguy has file on his folder called clickonthistomakeyourdreamscometrue.dll. It is unauthorized so remove it.
-k) remove unauthorized software by the name sqlite3
-l) Advanced - there is another file with the name 'thisisabackdoor.exe' on the server. It could be potentially used by the netcat utility program as a backdoor. See if you can find it and remove it
+k) Advanced - there is another file with the name 'thisisabackdoor.exe' on the server. It could be potentially used by the netcat utility program as a backdoor. See if you can find it and remove it
 
 For our practice images, because some students will finish faster than others, we may include unscored extra questions in the readme as an extension and challenge.
 
