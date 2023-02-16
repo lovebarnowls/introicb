@@ -35,7 +35,7 @@ msg = New user %PARAMETER% added to system
 enabled = yes
 tag = User Management
 pointValue = -10
-parameters = brothero itguy itguy2
+parameters = brothero itguy2 itguy
 description = Users that are required on the system
 msg = Essential user %PARAMETER% has been removed!
 
