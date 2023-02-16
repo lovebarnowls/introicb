@@ -104,7 +104,7 @@ description = Possible parameters: PasswordMaxDays, PasswordMinDays, PasswordWar
 msg = Account policy has been made more secure by %PARAMETER%
 
 [12-RemoveJohn:Prohibited_packages]
-enabled = yes
+enabled = no
 tag = Unwanted Software
 pointValue = 2
 parameters = john rkhunter sqlite3
@@ -179,7 +179,7 @@ msg = Directory permissions on /var/www/html have set
 enabled = yes
 tag = Prohibited File
 pointValue = 5
-parameters = /home/ivan/desktop/iloveqld/clickonthistomakeyourdreamscometrue.dll
+parameters = /home/itguy/desktop/iloveqld/clickonthistomakeyourdreamscometrue.dll
 description = Files you want removed from the system
 msg = Plaintext unauthorized file %PARAMETER% removed
 
@@ -259,7 +259,7 @@ msg = Webserver root directory is owned by group banana
 enabled = yes
 tag = Prohibited File
 pointValue = 5
-parameters = /home/chris/desktop/ilovevic/vicisawesome/thisisabackdoor.exe
+parameters = /home/brotherz/desktop/ilovevic/vicisawesome/thisisabackdoor.exe
 description = Files you want removed from the system
 msg = Netcat backdoor removed: %PARAMETER%
 
