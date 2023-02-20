@@ -2,12 +2,13 @@ Welcome to CyberTaipan training: Introduction to the scoring service.
 
 Through this image, it is hoped that you will get familiar with the scoring service, and at the same time, to gain some familiarity with how the system works.
 
-Note: Users on AWS may need to run the following code if they don't have permissions to write files etc:
-sudo -i
+Note: If you need a hint, open the forensic3 document
 
 
 To begin, please open 'ScoreReport.html' on your Desktop when it loads.
 There should be two other files named 'forensic1' and 'forensic2'
+
+*** Forensic3 contains the hints to solve these questions ***
 
 If the scoring doesn't show up, it probably means it hasn't loaded yet.
 DO NOT interact with the image (ie open the terminal etc) until the Scoring Engine is done loading. Doing so may cause your image to be rendered useless.
