@@ -1,0 +1,105 @@
+Contains hints for this entire image
+
+
+Hint file for CyberTapian introduction image. 
+
+Preamble:
+Users mainly use either the GUI (Graphic User Interface, such as in most standard Windows devices) or CLI (command line interface) to get things done on their images. 
+
+The fact of the matter is: CLI offers more options than GUI and many advanced maneuvers require CLI.
+That being said, the GUI, because of the way it is programmed, and displays information, can sometimes offer convenience in carrying out various tasks. 
+
+A good Cybersecurity professional, therefore, will use both, and know when to use which to get to their destination faster. 
+Sometimes, it is also a matter of preference. 
+
+This document has hints for both groups of users. GUI user hints are first, then CLI hints later
+
+
+Graphic User Interace Users
+
+
+a) Answer forensic1
+https://www.base64decode.org/
+b) Answer forensic2
+In the top left, menu > administration > users and groups 
+You can find the information somewhere in advanced settings
+(the password is ‘ubuntu’)
+c) Remove user idontbelonghere  
+You should be able to figure this one out
+d) This will cause a point deduction but do it anyway to see what happens: remove user  IF USING A GUI SELECT KEEP FILES  
+
+See if you can figure out how to remove the penalty after triggering it
+e) Add user  to the system
+Should be easy to figure this out from the same menu
+f) Create  group
+It’s also in the same menu
+g) Add user to group
+Might need to go to advanced settings for this one
+h) Remove user  from sudo
+Might need to use manage groups
+i) Add user  to sudo group
+j) User has file on his folder called clickonthistomakeyourdreamscometrue.dll. It is unauthorized so remove it.
+If you open up Ubuntu’s home, then on the left, go to file system, and then home, you can find a list of all users’ files.
+
+
+If you are having trouble deleting the file, move on to the next question first. 
+
+
+k) Advanced - there is another file with the name 'thisisabackdoor.exe' on the server. It could be potentially used by the netcat utility program as a backdoor. See if you can find it and remove it
+There’s a search bar in the top right.
+You might need to run the search when you are at ‘home’ above.
+The good news is you’ve found the file and where it is. The bad news? You can’t delete it with your current settings, hence the importance of learning how to use the CLI.
+
+Addendum for the technically-minded: there are ways to login as root into a GUI to delete this file. 
+This is in no way recommended - imagine accidentally double clicking on a malicious exe file. 
+Windows mitigates this by making you sign in as an administrator before allowing something to run. 
+So you can imagine, it must be really dangerous that they make you jump through multiple hoops to enable (either via CLI or root GUI login), just to help you prove you know what you are doing. 
+
+An alternative solution to the above is to login as the file owner by creating a password for him/her then deleting the file and going back as Ubuntu. 
+It's a bit too much trouble when the terminal suffices. 
+
+
+
+
+
+
+
+
+
+Command Line Interface users
+
+Start as root in the terminal by using the following command:
+sudo -i
+
+You can open the terminal by going to menu -> Administrative tools -> MATE terminal
+a) Answer forensic1
+b) Answer forensic2
+https://kb.iu.edu/d/adwf
+c) Remove user
+https://linuxize.com/post/how-to-delete-users-in-linux-using-the-userdel-command/
+d) This will cause a point deduction but do it anyway to see what happens: remove user 
+
+See if you can figure out how to remove the penalty after triggering it
+
+e) Add user to the system
+https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
+f) Create  group
+https://linuxize.com/post/how-to-create-groups-in-linux/
+
+g) Add user to  group
+https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/
+
+h) Remove user from sudo
+https://distroid.net/add-remove-users-from-groups/
+
+
+i) Add user to sudo group
+See hint in (g) above
+j) User has file on his folder called clickonthistomakeyourdreamscometrue.dll. It is unauthorized so remove it.
+rm is the command you need. 
+cd allows you to move between directories.
+
+k) Advanced - there is another file with the name 'thisisabackdoor.exe' on the server. It could be potentially used by the netcat utility program as a backdoor. See if you can find it and remove it
+https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/
+Important - you have to know which directory you are running the search from…
+
